@@ -1,0 +1,118 @@
+/* styles.css */
+
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    color: #333333;
+    background-color: #fff;
+    /* A light background to ensure readability */
+}
+
+/* Container for consistent max-width */
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    /* Adding padding to top for a bit of space */
+}
+
+header img {
+    max-width: 100px;
+    /* Logo size */
+    margin-bottom: 20px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Georgia', serif;
+    /* Serif font for a more formal look */
+    color: #8C1D40;
+    /* Dark red color taken from the logo for headings */
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.67em 0;
+    /* Browser default for h1 */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.75em;
+}
+
+/* Course list styling */
+.course {
+    background-color: #f0f0f0;
+    border-left: 5px solid #8C1D40;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.course h2 {
+    font-size: 1.25em;
+    margin-top: 0;
+}
+
+/* Details link styling */
+.details-link {
+    font-size: 0.85em;
+    color: #0055b7;
+    text-decoration: none;
+}
+
+.details-link:hover {
+    text-decoration: underline;
+}
+
+/* Specific to the course details page */
+.course-detail {
+    background-color: #f8f8f8;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    /* Slightly rounded corners for the detail boxes */
+}
+
+.course-detail h3 {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Description list styling for details page */
+dl dt {
+    font-weight: bold;
+    color: #8C1D40;
+    margin-top: 15px;
+}
+
+dl dd {
+    margin-bottom: 15px;
+    margin-left: 0;
+    /* Resetting default browser styling */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
