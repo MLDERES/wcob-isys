@@ -55,6 +55,13 @@ h2 {
     margin-bottom: 0.75em;
 }
 
+.course-offerings 
+{
+    border-top: 2px solid #8C1D40;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
 /* Course list styling */
 .course {
     background-color: #f0f0f0;
@@ -119,10 +126,6 @@ footer {
     width: 100%;
 }
 
-.course {
-    
-}
-
 .course:hover {
     /* Moves the element up by 5 pixels on hover */
     transform: translateY(5px);
@@ -145,4 +148,69 @@ footer {
     transform: translateY(-5px);
     /* Moves the div up by 5 pixels on hover */
     /* Any other hover styles you want to apply directly to the .course block */
+}
+
+.analytics-cycle-description {
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 5px;
+    text-align: left;
+    vertical-align: middle;
+    width: 50%;
+}
+
+.key-emphasis {
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+.topic-explored {
+    font-style: italic;
+    text-align: center;
+}
+
+.row-header {
+    font-weight: bold;
+}
+#course-breakdown {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    /* Adds space below the table */
+}
+
+#course-breakdown th,
+#course-breakdown td {
+    border: 1px solid #e6e6e6;
+    /* Light grey border for a softer look */
+    text-align: left;
+    padding: 8px;
+}
+
+#course-breakdown th {
+    background-color: #8C1D40;
+    /* Soft, academic blue */
+    color: white;
+    /* White for contrast */
+    font-weight: bold;
+}
+
+#course-breakdown .key-emphasis {
+    background-color: #B95065;
+    color: white;
+    /* White text for better readability */
+}
+
+#course-breakdown .topic-explored {
+    background-color: #E8E8E8;
+    
+    color: #5a5a5a;
+    /* Darker grey for contrast against the gold */
+}
+
+#course-breakdown .row-header {
+    background-color: #e0e0e0;
+    /* Lighter grey to distinguish the first column */
+    font-weight: bold;
 }
