@@ -145,9 +145,8 @@ footer {
 }
 
 .course-link:hover .course {
-    transform: translateY(-5px);
-    /* Moves the div up by 5 pixels on hover */
-    /* Any other hover styles you want to apply directly to the .course block */
+    transform: translateX(5px);
+    /* Moves the div right by 5 pixels on hover */
 }
 
 .analytics-cycle-description {
@@ -178,6 +177,8 @@ footer {
     width: 100%;
     margin-bottom: 20px;
     /* Adds space below the table */
+    margin-top:50px;
+    /* Adds space above the table */
 }
 
 #course-breakdown th,
@@ -213,4 +214,36 @@ footer {
     background-color: #e0e0e0;
     /* Lighter grey to distinguish the first column */
     font-weight: bold;
+}
+/* Container to control the initial view and positioning */
+.img-container {
+    overflow: visible;
+    /* Ensures the original image bounds are set */
+    border: 1px solid #ccc;
+    /* Optional: adds a border around the image container */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image styles */
+img.pop-out-image {
+    transition: all 0.5s ease;
+    /* Smooth transition for the pop out effect */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    /* Optional: adds rounded corners to the image */
+}
+
+/* Pop out effect on hover */
+.img-container:hover img.pop-out-image {
+    transform: scale(1.75);
+    /* Scales the image */
+    position: absolute;
+    z-index: 10;
+    /* Ensure it pops out over other content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Optional: adds shadow for more depth */
 }
